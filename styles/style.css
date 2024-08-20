@@ -44,7 +44,7 @@ body {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 600px;
+    width: 400px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     transition: right 0.8s ease;
@@ -67,15 +67,20 @@ body {
 .menu_btn {
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 110px;
     display: flex;
     flex-flow: column nowrap;
 }
 .menu_btn a {
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: #fff;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.7;
+}
+.menu_btn a:hover {
+    color: #5566ff;
+    transition: 0.5s;
+    text-decoration: #fff underline;
 }
 .close_btn img {
     width: 20px;
@@ -91,10 +96,11 @@ body {
 }
     .word span {
         font-size: 5rem;
-        color: #fff;
+        color: #bfff00;
         font-weight: 600;
         display: inline-block;
         transform: rotate(20deg);
+        animation: updown 2s infinite;
     }
     .word {
         font-size: 5rem;
@@ -121,7 +127,7 @@ body {
         width: 0;
         height: 4px;
         background: #fff;
-        animation: line 0.4s 1.8s ease both;
+        animation: line 0.3s 1.8s ease both;
     }
     .word_Box_2 {
         display: flex;
@@ -187,7 +193,8 @@ body {
     }
     .word_9 {
         padding-top: 20px;
-        animation: opacity 2s 3.3s both;
+        color: #5566ff;
+        animation: opacity 3s 3.3s both;
     }
 /* aboutme */
 .section {
@@ -195,7 +202,7 @@ body {
 }
 h2 {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #000;
     font-weight: 600;
     background: #bfff00;
@@ -210,13 +217,12 @@ h2 {
     width: 350px;
 }
 .frofile_Box {
-    padding-left: 35px;
+    padding: 20px 35px;
 }
 .frofile {
     font-size: 1.625rem;
-    font-weight: 600;
     color: #fff;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 .skills {
     padding-top: 53px;
@@ -254,6 +260,7 @@ h2 {
 .piece .img_Clk .review {
     width: 320px;
     margin: 0;
+    padding-bottom: 20px;
 }
 .piece .pj_box {
     padding: 10px 0 0 20px;
@@ -286,7 +293,7 @@ h2 {
     flex-flow: column nowrap;
 }
 .detail p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
     line-height: 1.5;
@@ -308,7 +315,6 @@ h2 {
 .title .tit_Text {
     padding-left: 20px;
     color: #fff;
-    font-weight: 600;
     font-size: 1.875rem;
     position: relative; bottom: -20px;
 }
@@ -346,7 +352,6 @@ img {
 }
 .contact_box .text {
     font-size: 1.875rem;
-    font-weight: 600;
     color: #fff;
     line-height: 1.4;
     padding-bottom: 20px;
@@ -384,4 +389,15 @@ img {
 }
 @keyframes bg{
 	to{clip-path:inset(0 0 0 0);}
+}
+@keyframes updown {
+    0% {
+        transform: scale(1) rotate(20deg);
+    }
+    50% {
+        transform: scale(1.5) rotate(20deg);
+    }
+    100% {
+        transform: scale(1) rotate(20deg);
+    }
 }
