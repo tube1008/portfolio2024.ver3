@@ -1,0 +1,386 @@
+* {scroll-behavior: smooth;}
+body {
+    background: #000;
+}
+#fullpage {
+    height: 100%; 
+    position: relative;
+}
+/* 메뉴 */
+.hd_menuWrap {
+    width: 100%;
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	position: fixed;
+    left: 0; top: 0; z-index: 900;
+	padding: 15px 100px;
+	/* background: rgba(255, 255, 255, 0.0); */
+}
+.hd_menudown {
+    width: 100%;
+	position: fixed;
+    left: 0; bottom: 0; z-index: 900;
+	padding: 15px 100px;
+}
+.logo span,
+.menuClick p,
+.hd_menudown span {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+}
+.menuClick {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.menuClick p img {
+    width: 32px;
+    padding-left: 10px;
+}
+/* 메뉴활성화 */
+.menuActive {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 600px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: right 0.8s ease;
+    z-index: 999;
+}
+.menuActive.active {
+    right: 0;
+}
+.hidden {
+    display: none;
+}
+.bg_menu {
+    position: relative;
+}
+.close_btn {
+    position: absolute;
+    top: 15px;
+    right: 100px;
+}
+.menu_btn {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu_btn a {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.close_btn img {
+    width: 20px;
+}
+
+/* 텍스트 */
+.section1 {
+    position: relative;
+    width: 90%;
+    max-width: 1330px;
+    margin: 0 auto;
+    animation: opacity 0.6s 1s both;
+}
+    .word span {
+        font-size: 5rem;
+        color: #fff;
+        font-weight: 600;
+        display: inline-block;
+        transform: rotate(20deg);
+    }
+    .word {
+        font-size: 5rem;
+        color: #fff;
+        font-weight: 600;
+    }
+    .word_9 {
+        font-size: 2.5rem;
+    }
+    .word_Box_1 {
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .word_3 {
+        font-family: 'Square Peg';
+        padding-left: 30px;
+        position: relative;
+    }
+    .word_3::after {
+        content: '';
+        position: absolute;
+        top: 55%;
+        left: 6%;
+        width: 0;
+        height: 4px;
+        background: #fff;
+        animation: line 0.4s 1.8s ease both;
+    }
+    .word_Box_2 {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .word_5 {
+        margin: 0 20px;
+        position: relative;
+    }
+    .word_5::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: #bfff00;
+        z-index: 0;
+        animation: line 0.3s 2.4s linear both;
+    }
+    .word_5::after {
+        content: "CREATIVE";
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        color: #000;
+        z-index: 2;
+        clip-path: inset(0 100% 0 0);
+        line-height: initial;
+        animation: bg 0.3s 2.4s linear both;
+    }
+    .word_6 {
+        padding-right: 20px;
+    }
+    .word_7 {
+        position: relative;
+    }
+    .word_7::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: #5566ff;
+        z-index: 0;
+        animation: line 0.3s 2.8s linear both;
+    }
+    .word_7::after {
+        content: "UNIQUE";
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        z-index: 2;
+        clip-path: inset(0 100% 0 0);
+        line-height: initial;
+        animation: bg 0.3s 2.8s linear both;
+    }
+    .word_9 {
+        padding-top: 20px;
+        animation: opacity 2s 3.3s both;
+    }
+/* aboutme */
+.section {
+    padding: 0px 100px;
+}
+h2 {
+    display: inline-block;
+    font-size: 5rem;
+    color: #000;
+    font-weight: 600;
+    background: #bfff00;
+    padding: 4px 20px 4px 10px;
+    margin-bottom: 20px;
+}
+.introduction {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.photo img {
+    width: 350px;
+}
+.frofile_Box {
+    padding-left: 35px;
+}
+.frofile {
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.skills {
+    padding-top: 53px;
+}
+.skills img {
+    width: 100px;
+    padding-right: 20px;
+}
+/* project */
+.project_box {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.project {
+    margin: 0 35px 65px 0;
+    width: 550px;
+    height: auto;
+    padding: 25px;
+    background: #262626;
+}
+.project h3 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 35px 8px 8px;
+    background: #5566ff;
+    margin-bottom: 20px;
+}
+.piece {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.piece .img_Clk .review {
+    width: 320px;
+    margin: 0;
+}
+.piece .pj_box {
+    padding: 10px 0 0 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.pj_box .pj_detail {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.pj_box .pj_in {
+    width: 90px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background: #5566ff;
+    margin-bottom: 10px;
+}
+.pj_in:hover {
+    color: #000;
+    background: #bfff00;
+    transition: 0.5s;
+}
+.project .detail {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.detail p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+}
+.detail .rg {
+    font-size: 1.25rem;
+    color: #fff;
+    padding-left: 5px;
+}
+.tag {
+    padding-top: 15px;
+}
+/* work */
+.title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+.title .tit_Text {
+    padding-left: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.875rem;
+    position: relative; bottom: -20px;
+}
+.img_box {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.img_box .img {
+    display: flex; 
+    flex-flow: column nowrap;
+}
+.down {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.img {padding: 5px;}
+.img:nth-child(1) {padding-left: 0;}
+img {
+    width: 250px;
+    height: auto;
+    margin: 5px 0;
+}
+.open_btn:hover {
+    scale: 1.5;
+    transition: 1s;
+}
+.img .up img,
+.img .down img {margin:5px;}
+.img .up img:nth-child(1),
+.img .down img:nth-child(1) {margin-left:0;}
+/* contact */
+.contact_box {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.contact_box .text {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+.card_box .text {
+    margin-top: 50px;
+    font-size: 1.875rem;
+    color: #fff;
+    background: #262626;
+    padding: 45px 50px;
+}
+.contact_rt{
+    width: 100%;
+    text-align: center;
+
+}
+.emoge {
+    width: 40%;
+    border-radius: 25%;
+}
+@keyframes opacity {
+    from {
+        top: 50px;
+        opacity: 0;
+    }
+  
+    to {
+        top: 0;
+        opacity: 1;
+    }
+  }
+
+  @keyframes line {
+    to{width:100%;}
+}
+@keyframes bg{
+	to{clip-path:inset(0 0 0 0);}
+}
