@@ -228,7 +228,7 @@ h2 {
     padding-top: 53px;
 }
 .skills img {
-    width: 100px;
+    width: 100px; 
     padding-right: 20px;
 }
 /* project */
@@ -404,8 +404,9 @@ img {
 
 /* 반응형 */
 @media all and (max-width:767px) {
-    .hd_menuWrap {
-        padding: 15px 30px;
+    .hd_menuWrap,
+    .hd_menudown {
+        padding: 15px 25px;
     }
     .section1 .word span,
     .section1 .word {
@@ -415,10 +416,68 @@ img {
         font-size: 1.8rem;
     }
     .section {
-        padding: 0 30px;
+        padding: 0 25px;
     }
     .section h2 {
         font-size: 2rem;
     }
-    .
+    .photo img {
+        width: 220px;
+    }
+    .profile {
+        font-size: 1rem;
+    }
+    .introduction {
+        position: relative;
+    }
+    .skills {
+        width: 100%;
+        position: absolute;
+        bottom: -70px;
+        left: 0;
+    }
+    .skills img {
+        width: 50px; 
+        padding-right: 10px;
+    }
+    .project_box {
+        flex-flow: column nowrap;
+    }
+    .project {
+        margin: 0 0 20px 0;
+        /* width: 550px; */
+    }
+    .project h3 {
+        font-size: 1.2rem;
+        padding: 4px 20px 4px 4px;
+        margin-bottom: 10px;
+    }
+    .piece .img_Clk .review  {
+        width: 250px;
+        padding-bottom: 10px;
+    }
+    .pj_box .pj_detail {
+        font-size: 1rem;
+    }
+    .pj_box .pj_in {
+        font-size: 1rem;
+        width: 100%;
+        padding: 5px 0;
+        margin-bottom: 5px;
+    }
+    .detail .rg,
+    .detail p {
+        font-size: 1rem;
+    }
+    .tag {
+        font-weight: 100;
+    }
+    .title .tit_Text {
+        font-size: 1rem;
+        bottom: -10px;
+        padding-left: 5px;
+    }
+    img {
+        width: 100px;
+    }
 }
