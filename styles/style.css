@@ -1,5 +1,5 @@
 * {scroll-behavior: smooth;}
-body {min-width: 1920px;}
+/* body {min-width: 1920px;} */
 body {
     background: #000;
 }
@@ -123,7 +123,7 @@ body {
         content: '';
         position: absolute;
         top: 55%;
-        left: 6%;
+        left: 8%;
         width: 0;
         height: 4px;
         background: #fff;
@@ -216,10 +216,10 @@ h2 {
 .photo img {
     width: 350px;
 }
-.frofile_Box {
+.profile_Box {
     padding: 20px 35px;
 }
-.frofile {
+.profile {
     font-size: 1.625rem;
     color: #fff;
     padding-bottom: 15px;
@@ -400,4 +400,25 @@ img {
     100% {
         transform: scale(1) rotate(20deg);
     }
+}
+
+/* 반응형 */
+@media all and (max-width:767px) {
+    .hd_menuWrap {
+        padding: 15px 30px;
+    }
+    .section1 .word span,
+    .section1 .word {
+        font-size: 3rem;
+    }
+    .section1 .word_9 {
+        font-size: 1.8rem;
+    }
+    .section {
+        padding: 0 30px;
+    }
+    .section h2 {
+        font-size: 2rem;
+    }
+    .
 }
