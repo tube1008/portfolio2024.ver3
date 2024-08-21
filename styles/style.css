@@ -369,7 +369,7 @@ img {
 
 }
 .emoge {
-    width: 40%;
+    width: 400px;
     border-radius: 25%;
 }
 @keyframes opacity {
@@ -478,6 +478,77 @@ img {
         padding-left: 5px;
     }
     img {
-        width: 100px;
+        width: 110px;
+    }
+    .section7 .text {
+        font-size: 1.5rem;
+    }
+    .emoge {
+        width: 200px;
     }
 }
+@media all and (max-width:599px) {
+    .section1 .word span,
+    .section1 .word {
+        font-size: 2rem;
+    }
+    .word_3::after {
+        left: 15%;
+        height: 2px;
+    }
+    .section1 .word_9 {
+        padding-top: 10px;
+        font-size: 1.2rem;
+    }
+    .profile_Box {
+        padding: 10px 20px;
+    }
+    .profile {
+        padding-bottom: 5px;
+    }
+    .photo img {
+        width: 170px;
+    }
+    .skills {
+        width: 100%;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+    }
+    .skills img {
+        width: 45px; 
+        padding-right: 10px;
+    }
+    .project {
+        width: 450px;
+    }
+    .img_box1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 각 열의 최소 너비는 200px, 최대 너비는 1fr */
+        gap: 2px; /* 그리드 아이템 간의 간격 */
+        padding: 10px;
+    }
+    .img1 img, 
+    .img2 img, 
+    .img3 img, 
+    .img4 img, 
+    .img5 img, 
+    .img6 img, 
+    .img7 img {width: 100%;}
+    img {
+        width: 180px;
+    }
+    .up img, .down img {width: 100%;}
+    .up , .down {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* 이미지 간의 간격 */
+    }
+    .img_box2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 각 열의 최소 너비는 200px, 최대 너비는 1fr */
+        gap: 2px; /* 그리드 아이템 간의 간격 */
+        padding: 10px;
+    }
+    .img_box2 .img img {width: 100%;}
+} 
