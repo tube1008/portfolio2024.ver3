@@ -29,3 +29,16 @@ close_btn.addEventListener('click', function(e){
   menuclick.classList.remove('hidden');
   e.preventDefault();
 })
+
+let swiperContainer04 =document.querySelector('#workContainer4')
+let swiper04 = new Swiper('#workContainer4', {
+  // 한 번에 보여줄 슬라이드 수
+  slidesPerView: 2,
+  // 슬라이드 사이의 간격
+  spaceBetween: 30,
+  // 한 번에 넘길 슬라이드 수
+  loop: true,
+  autoplay: { delay: 2500, },
+  slidesPerGroup: 1, 
+  centeredSlides: true,
+  });

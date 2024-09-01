@@ -504,6 +504,7 @@ img {
         padding: 10px 20px;
     }
     .profile {
+        font-size: 0.875rem;
         padding-bottom: 5px;
     }
     .photo img {
@@ -512,7 +513,7 @@ img {
     .skills {
         width: 100%;
         position: absolute;
-        bottom: -50px;
+        bottom: -100px;
         left: 0;
     }
     .skills img {
@@ -520,7 +521,7 @@ img {
         padding-right: 10px;
     }
     .project {
-        width: 450px;
+        width: calc(100% - 1%);
     }
     .img_box1 {
         display: grid;
