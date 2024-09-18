@@ -3,7 +3,7 @@ $('#wrap').fullpage({
   autoScrolling: true,
   scrollOverflow: true,
   scrollBar:true,
-  scrollingSpeed:300,
+  scrollingSpeed:100,
   responsiveWidth:1920,
   showActiveTooltip:true,
   menu:'nav',
@@ -33,12 +33,24 @@ close_btn.addEventListener('click', function(e){
 let swiperContainer04 =document.querySelector('#workContainer4')
 let swiper04 = new Swiper('#workContainer4', {
   // 한 번에 보여줄 슬라이드 수
-  slidesPerView: 2,
+  slidesPerView: 5,
   // 슬라이드 사이의 간격
-  spaceBetween: 30,
+  spaceBetween: 5,
   // 한 번에 넘길 슬라이드 수
   loop: true,
   autoplay: { delay: 2500, },
   slidesPerGroup: 1, 
   centeredSlides: true,
+  breakpoints: {
+    // max-width 767px일 때
+    767: {
+      slidesPerView: 2,  // 2개의 슬라이드 보이기
+      spaceBetween: 10,  // 슬라이드 간 간격
+    },
+    // max-width 599px일 때
+    599: {
+      slidesPerView: 1,  // 1개의 슬라이드 보이기
+      spaceBetween: 5,  // 슬라이드 간 간격을 더 좁게 설정
+    },
+  },
   });
