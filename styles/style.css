@@ -320,6 +320,8 @@ h2 {
 }
 .design_Img_box {
     padding: 0 50px;
+    display: flex;
+    align-items: center;
 }
 .img_box {
     display: flex;
@@ -328,6 +330,27 @@ h2 {
 .img_box .img {
     display: flex; 
     flex-flow: column nowrap;
+}
+.slide1 p img,
+.slide2 p img,
+.slide3 p img,
+.slide4 p img,
+.slide5 p img,
+.slide6 p img,
+.slide7 p img,
+.slide8 p img,
+.slide9 p img,
+.slide11 p img,
+.slide12 p img,
+.slide13 p img,
+.slide14 p img,
+.slide15 p img,
+.slide16 p img,
+.slide17 p img,
+.slide18 p img,
+.slide19 p img,
+.slide20 p img {
+    width: 350px;
 }
 .down {
     display: flex;

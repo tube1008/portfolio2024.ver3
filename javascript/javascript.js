@@ -33,9 +33,9 @@ close_btn.addEventListener('click', function(e){
 let swiperContainer04 =document.querySelector('#workContainer4')
 let swiper04 = new Swiper('#workContainer4', {
   // 한 번에 보여줄 슬라이드 수
-  slidesPerView: 5,
+  slidesPerView: 4,
   // 슬라이드 사이의 간격
-  spaceBetween: 100,
+  spaceBetween: 250,
   // 한 번에 넘길 슬라이드 수
   loop: true,
   autoplay: { delay: 2500, },
