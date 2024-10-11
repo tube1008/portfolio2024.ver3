@@ -340,6 +340,7 @@ h2 {
 .slide7 p img,
 .slide8 p img,
 .slide9 p img,
+.slide10 p img,
 .slide11 p img,
 .slide12 p img,
 .slide13 p img,
@@ -349,7 +350,13 @@ h2 {
 .slide17 p img,
 .slide18 p img,
 .slide19 p img,
-.slide20 p img {
+.slide20 p img,
+.slide21 p img,
+.slide22 p img,
+.slide23 p img,
+.slide24 p img,
+.slide25 p img,
+.slide26 p img {
     width: 350px;
 }
 .down {
