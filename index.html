@@ -3,317 +3,399 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 풀페이지 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./javascript/jquery.fullPage.js"></script>
-    <link rel="stylesheet" href="./styles/jquery.fullPage.css">
-    <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
-    <!-- 리셋, 스타일css -->
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <!--플러그인 필수 css cdn 연결-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <!--플러그인 필수 JS cdn 연결-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <title>2024 portfolio</title>
+    <title>안일혁 포트폴리오</title>
+    <link rel="icon" href="./images/favicon (1).ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <!--플러그인 필수 css cdn 연결-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <!--플러그인 필수 JS cdn 연결-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/portfolio.css">
 </head>
 <body>
     <header>
-        <div class="hd_menuWrap">
-            <div class="logo">
-                <span>2024 portfolio</span>
-            </div>
-            <div class="menu">
-                <a href="#" class="menuClick">
-                    <p>MENU</p>
-                    <p><img src="./images/menu.png" alt="메뉴활성화"></p>
-                </a>
-            </div>
-        </div>
-        <div class="hd_menudown">
-            <span>Ahn_il_hyuk</span>
-        </div>
-        <!-- 메뉴활성화 -->
-        <div class="menuActive">
-            <div class="bg_menu">
-                <a href="#" class="close_btn"><img src="./images/close-button.png" alt="메뉴비활성화"></a>
-                <nav class="menu_btn">
-                    <a href="#home">Home</a>
-                    <a href="#about">About Me</a>
-                    <a href="#project">Project</a>
-                    <a href="#work">Work</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </div>
+        <ul class="gnb">
+            <li><a href="#homehome">HOME</a></li>
+            <li><a href="#aboutabout">ABOUT</a></li>
+            <li><a href="#skillskill">SKILLS</a></li>
+            <li><a href="#webProject">WEB_Project</a></li>
+            <li><a href="#designProject">DESIGN_Project</a></li>
+        </ul>
+        <p>PORTFOLIO</p>
     </header>
     <main>
-        <div id="wrap">
-            <div class="section section1" id="home">
-                <p class="word word_1">Hello <span>!</span></p>
-                <div class="word_Box_1">
-                    <p class="word word_2">Im NOT</p>
-                    <p class="word word_3">Ordinary</p>
+        <section class="home" id="homehome">
+            <h1>2025 web portfolio</h1>
+            <div class="homeBox">
+                <div class="detail">
+                    <p class="job">
+                        WEB PUBLISHER  & 
+                        WEB DESIGNER
+                    </p>
+                    <p class="name">AHNILHYUK</p>
                 </div>
-                <div class="word_Box_2">
-                    <p class="word word_4">Im</p>
-                    <p class="word word_5">CREATIVE</p>
-                    <p class="word word_6">AND</p>
-                    <p class="word word_7">UNIQUE</p>
-                </div>
-                <div class="word_Box_3">
-                    <p class="word word_8">Web designer AND Publisher</p>
-                </div>
-                <div class="word_Box_4">
-                    <p class="word word_9">다함께 많은 이야기를 만들어나갔으면 좋겠습니다.</p>
-                </div>
+                <div class="bgimage"><img src="https://unsplash.com/photos/WGu05iTF3Ng/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzQ2NDM3MDAyfA&force=true" alt="homeimage"></div>
             </div>
-            <div class="section section2" id="about">
-                <h2>About me.</h2>
-                <div class="introduction">
-                    <div class="photo">
-                        <img src="./images/me.jpg" alt="내사진">
-                    </div>
-                    <div class="profile_Box">
-                        <p class="profile">안일혁</p>
-                        <p class="profile">91. 05. 04</p>
-                        <p class="profile">010. 3360. 7602</p>
-                        <p class="profile">ilhyuk0504@gmail.com</p>
-                        <p class="profile">2023. 10. 30 - 2024. 03. 14 : 생성형 AI를 활용한 채팅기반 프론트엔드 개발자 과정</p>
-                        <p class="profile">2017. 02 : 문헌정보학과전공[4년제]</p>
-                        <p class="profile">2023. 01. 13 : GTQ그래픽 기술자격 1급 [포토샵]</p>
-                        <p class="profile">소명소프트(주) : 2024. 04. 22 ~ 07. 21 : 제안서 디자인시안 작업, 웹페이지 디자인 및 퍼블리싱[반응형]</p>
-                        <div class="skills">
-                            <img src="./images/html_2.png" alt="">
-                            <img src="./images/css2.png" alt="">
-                            <img src="./images/js2.png" alt="">
-                            <img src="./images/sass1.png" alt="">
-                            <img src="./images/ph1.png" alt="">
-                            <img src="./images/illustrator.png" alt="">
-                            <img src="./images/figma1.png" alt="">
-                            <img src="./images/Group 11.png" alt="">
-                            <img src="./images/gpt2.png" alt="">
-                            <img src="./images/Group 12.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section section3" id="project">
-                <h2>Project.</h2>
-                <div class="project_box">
-                    <div class="project">
-                        <h3>Team project.</h3>
-                        <div class="piece">
-                            <a class="img_Clk" target="_blank" href="http://minah.dothome.co.kr/" ><img class="review" src="./images/./yeo.png" alt="요기요페이지들어가기"></a>
-                            <div class="pj_box">
-                                <p class="pj_detail">24.02.01 - 02.28</p>
-                                <p class="pj_detail">4명참여</p>
-                                <p class="pj_detail">image click!!</p>
-                                <a class="pj_in" target="_blank" href="https://github.com/DOoOoOoOnut/project_yeogi.git" >+github</a>
-                                <a class="pj_in" target="_blank" href="https://www.figma.com/proto/fsc1pWbHVKhmVLFIVJRfIf/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C?page-id=0%3A1&type=design&node-id=1-138&viewport=302%2C1678%2C0.14&t=ngDRl3j0Z3R8gqPl-1&scaling=contain&mode=design">+기획서</a>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <div class="left">
-                                <p>숙소 상세페이지 <span class="rg">[detail.html]</span></p>
-                                <p>이용약관페이지 <span class="rg">[raw.html]</span></p>
-                                <p>공지사항페이지 <span class="rg">[notice, notice_detail.html]</span></p>
-                                <p>비회원예약페이지 <span class="rg">[non_member_reservation.html<br>non_member_reservation_check.html]</span></p>
-                                <p>발표담당</p>
-                            </div>
-                            <div class="right">
-                                <p class="tag">
-                                    #html5 #css3 #javascript #sass
-                                    #php #github #figma #api
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h3>Solo project.</h3>
-                        <div class="piece">
-                            <a href="https://sleepingbottle2024.netlify.app" class="img_Clk" target="_blank"><img class="review" src="./images/./sleepingbottle 1.png" alt="슬리핑보틀페이지들어가기"></a>
-                            <div class="pj_box">
-                                <p class="pj_detail">23.12.01 - 01.01</p>
-                                <p class="pj_detail">sleeping bottle</p>
-                                <p class="pj_detail">image click!!</p>
-                                <a href="https://github.com/tube1008/sleepingbottle2024.git" class="pj_in" target="_blank">+github</a>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <p class="tag">#html5 #css3 #javascript #github</p>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h3>Team project.</h3>
-                        <div class="piece">
-                            <a href="https://www.figma.com/proto/3aGwgB1xKW1LdDqqkKnfqc/ppt?page-id=0%3A1&type=design&node-id=55-927&viewport=499%2C251%2C0.03&t=keE80gHVOVF37sSH-1&scaling=contain&mode=design" class="img_Clk" target="_blank"><img class="review" src="./images/./오내옷 작업.png" alt="오내옷페이지들어가기"></a>
-                        </div>
-                        <div class="detail">
-                            <span></span>
-                            <span></span>
-                            <p class="text">
-                                [App design]<br>
-                                오늘 내가 입어야 할 옷은?(오내옷)<br>
-                                일상에 필요한 앱을 구상하여 디자인 하였습니다.<br>
-                                아이디어 컨셉 구상 및 발표자료 제작, 발표담당
-                            </p>
-                            <p class="tag">#figma #photoshop # illustration #notion</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section section4" id="work">
+        </section>
+        <section class="about" id="aboutabout">
+            <div class="background">
                 <div class="title">
-                    <h2>Design work.</h2>
-                    <span class="tit_Text">Mouse over</span>
+                    <h1 class="on1">About me</h1>
                 </div>
-                <div class="img_box img_box1">
-                    <div class="img img1">
-                        <img class="no_padding open_btn" src="./images/Nowon_Mainpage.png"  alt="노원 청년 포탈">
-                        <img class="no_padding open_btn" src="./images/Nowon_청년참여공간.png" alt="노원 청년 포탈">
-                    </div>
-                    <div class="img img2">
-                        <img class="open_btn" src="./images/Nowon_Sitemap.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_청년토론-1.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_청년정책제언-3.png" alt="노원 청년 포탈">
-                    </div>
-                    <div class="img img3">
-                        <img class="open_btn" src="./images/Nowon_NoSearch.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_청년정책제언-4.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/./Nowon_청년토론-2.png" alt="노원 청년 포탈">
-                    </div>
-                    <div class="img img4">
-                        <img class="open_btn" src="./images/Nowon_정책캘린더.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_청년인재등록-2.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_청년정책제언-1.png" alt="노원 청년 포탈">
-                    </div>
-                    <div class="img img5">
-                        <img class="open_btn" src="./images/Nowon_notice_detailpage.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_청년통계.png" alt="노원 청년 포탈">
-                    </div>
-                    <div class="img img6">
-                        <img class="open_btn" src="./images/Nowon_청년인재등록-1.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_청년정책제언-2.png" alt="노원 청년 포탈">
-                        <img class="open_btn" src="./images/Nowon_Errorpage.png" alt="노원 청년 포탈">
-                    </div>
-                </div>
-            </div>
-            <div class="section section5">
-                <div class="title">
-                    <h2>Design work.</h2>
-                    <span class="tit_Text">Mouse over</span>
-                </div>
-                <div class="swiper-container img_box" id="workContainer4">
-                    <div class="swiper-wrapper design_Img_box">
-                        <div class="swiper-slide slide1">
-                            <p><img class="open_btn" src="./images/work1.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide2">
-                            <p><img class="open_btn" src="./images/work2.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide3">
-                            <p><img class="open_btn" src="./images/work3.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide4">
-                            <p><img class="open_btn" src="./images/work4.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide5">
-                            <p><img class="open_btn" src="./images/work5.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide6">
-                            <p><img class="open_btn" src="./images/work19.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide7">
-                            <p><img class="open_btn" src="./images/work20.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide8">
-                            <p><img class="open_btn" src="./images/work21.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide9">
-                            <p><img class="open_btn" src="./images/work22.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide10">
-                            <p><img class="open_btn" src="./images/work27.png" class="no_padding" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide11">
-                            <p><img class="open_btn" src="./images/WORK18.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide12">
-                            <p><img class="open_btn" src="./images/영재키움교육.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide13">
-                            <p><img class="open_btn" src="./images/work23.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide14">
-                            <p><img class="open_btn" src="./images/work24.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide15">
-                            <p><img class="open_btn" src="./images/포천시청소년재단.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide17">
-                            <p><img class="open_btn" src="./images/work25.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide18">
-                            <p><img class="open_btn" src="./images/유네스코 세계유산국제해석센터.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide19">
-                            <p><img class="open_btn" src="./images/work26.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide20">
-                            <p><img class="open_btn" src="./images/work13.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide21">
-                            <p><img class="open_btn" src="./images/work14.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide22">
-                            <p><img class="open_btn" src="./images/work15.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide23">
-                            <p><img class="open_btn" src="./images/work16.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide24">
-                            <p><img class="open_btn" src="./images/work17.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide25">
-                            <p><img class="open_btn" src="./images/work18.png" alt="작업물"></p>
-                        </div>
-                        <div class="swiper-slide slide26">
-                            <p><img class="open_btn" src="./images/work19.png" alt="작업물"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section section7" id="contact">
-                <h2>Contact. </h2>
-                <div class="contact_box">
-                    <div class="contact_lt">
-                        <p class="text">잘보셨나요?</p>
-                        <p class="text">
-                            더 많은 이야기를 나누고 싶으시다면 아래 연락처로
+                <div class="aboutBox">
+                    <div class="detailPage">
+                        <p class="photo">
+                            <img src="./images/me.jpg" alt="myphoto">
                         </p>
-                        <p class="text">연락을 부탁드립니다.</p>
-                        <div class="card_box">
-                            <p class="text">
-                                Kakaotalk ID - Tubee<br>
-                                Phone - 01033607602<br>
-                                Mail - ilhyuk0504@gamil.com
-                            </p>
-                        </div>
                     </div>
-                    <div class="contact_rt">
-                        <img src="./images/meme1.png" class="emoge" alt="이모지">
-                        <p class="text">See you soon!!</p>
+                    <div class="profile">
+                        <div class="top">
+                            <div class="text">
+                                <p>NAME<span>안 일 혁</span></p>
+                                <p>PHONE<span>010. 3360. 7602</span></p>
+                            </div>
+                            <div class="text">
+                                <p>BIRTH<span>91. 05. 04</span></p>
+                                <p>EMAIL<span>ilhyuk0504@gmail.com</span></p>
+                            </div>
+                        </div>
+                        <div class="btm">
+                            <div class="detail education">
+                                <h2>EDUCATION</h2>
+                                <p>2023. 10. 30 - 2024. 03. 14 : 생성형 AI를 활용한 채팅기반 프론트엔드 개발자 과정</p>
+                                <p>2017. 02 : 문헌정보학과전공 {4년제}</p>
+                            </div>
+                            <div class="detail">
+                                <h2>CERTIFICARE</h2>
+                                <p>2023. 01. 13 : GTQ그래픽 기술자격 1급 {포토샵}</p>
+                            </div>
+                            <div class="detail">
+                                <h2>WORK EXPERIENCE</h2>
+                                <p class="sm_soft">소명소프트(주) : 2024-04 ~ 2024-08 - 디자인시안 작업, 웹페이지 디자인 및 퍼블리싱</p>
+                                <a class='site' href="work_experience.html">
+                                    소명 소프트 작업물 보기
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </section>
+        <section class="skill" id="skillskill">
+            <div class="background">
+                <div class="title">
+                    <h1 class="on2">Skills</h1>
+                </div>
+                <div class="skillBox">
+                    <div id="skills">
+                        <p class="item item8">
+                            <em>Photoshop</em>
+                            <span>다양한 디자인 제작이 가능합니다.</span>
+                        </p>
+                        <p class="item item9">
+                            <em>illustrator</em>
+                            <span>캐릭터 디자인, 로고, 간단한 일러스트배경이 가능합니다
+                            </span>
+                        </p>
+                        <p class="item item10">
+                            <em>figma</em>
+                            <span>
+                                앱디자인 프로젝트 및 프로토타입,와이어프레임 개발,플러그인을 이용해 목업도 가능합니다
+                            </span>
+                        </p>
+                        <p class="item item1">
+                            <em>HTML5</em>
+                            <span>웹접근성, 표준성을 준수하고 시멘틱태그를 이용해 마크업 가능</span>
+                        </p>
+                        <p class="item item2">
+                            <em>CSS3</em>
+                            <span>여러 속성을 이해하고 적절하게 사용하여 상황에 맞게 적용가능</span>
+                        </p>
+                        <p class="item item3">
+                            <em>JAVASCRIPT</em>
+                            <span>배열, 메소드, DOM등을 이해하고 있으며 다양한 상황에 적용가능</span>
+                        </p>
+                        <p class="item item5">
+                            <em>SCSS</em>
+                            <span>scss의 문법과 모듈화를 이해하고, 효율을 극대화 할 수 있습니다</span>
+                        </p>
+                        <p class="item item7">
+                            <em>REACT</em>
+                            <span>기본적인 React구조를 이해하고 있으며 컴포넌트 설계가 가능합니다.</span>
+                        </p>
+                        <p class="item item11">
+                            <em>git</em>
+                            <span>프로젝트 공유&관리를 할수 있으며, 팀원들과 협업이 가능합니다
+                            </span>
+                        </p>
+                        <p class="item item13">
+                            <em>API</em>
+                            <span>
+                                Chat bot api를 사용하여 실시간 상호작용가능한 챗봇을 만들 수 있습니다, Map api를 사용하여 지도 기능을 추가할 수 있습니다, Swiper api를 사용하여 스와이퍼 기능을 추가할 수 있습니다
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================웹프로젝트 -->
+        <section class="project" id="webProject">
+            <div class="background">
+                <div class="title">
+                    <h1 class="on3">Project</h1>
+                </div>
+                <div class="swiper" id="projectContainer">
+                    <div class="swiper-wrapper myProject">
+                        <div class="swiper-slide project">
+                            <div class="page">
+                                <div class="detail">
+                                    <h2>Main page</h2>
+                                    <p>2025.04.14 - 04.18</p>
+                                    <p>Kitskinkind</p>
+                                    <div class="skills">
+                                        <p>#html5</p>
+                                        <p>#css3</p>
+                                        <p>#javascript</p>
+                                        <p>#github</p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://github.com/tube1008/kitskinkind.git" target="_blank"
+                                        class="git">+Github 코드보기</a>
+                                        <a href="https://kitskinkind.netlify.app/" target="_blank" class="mainpage">결과보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum"><img
+                                    src="./images/SKINKIND.png" alt="SleepingBottle"><span
+                                    class="bg"></div>
+                        </div>
+                        <div class="swiper-slide project">
+                            <div class="page">
+                                <div class="detail">
+                                    <h2>Web Project</h2>
+                                    <p>2023.12.01 - 01.01</p>
+                                    <p>SleepingBottle</p>
+                                    <div class="skills">
+                                        <p>#html5</p>
+                                        <p>#css3</p>
+                                        <p>#javascript</p>
+                                        <p>#github</p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://github.com/tube1008/sleepingbottle2024.git" target="_blank"
+                                        class="git">+Github 코드보기</a>
+                                        <a href="https://sleepingbottle2024.netlify.app" target="_blank" class="mainpage">결과보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum"><img
+                                    src="./images/sleepingbottle.png" alt="SleepingBottle"><span
+                                    class="bg"></div>
+                        </div>
+                        <div class="swiper-slide project">
+                            <div class="page">
+                                <div class="detail">
+                                    <h2>TeamProject</h2>
+                                    <p>24.02.01 - 02.28</p>
+                                    <p>팀원 4명참여</p>
+                                    <p>- 숙소 상세페이지 <span>{detail.html}</span><br>
+                                        - 이용약관 페이지 <span>{raw.html}</span><br>
+                                        - 비회원예약 페이지 <span>{non_member_reservation.html,
+                                            non_member_reservatio_check.html}</span><br>
+                                            - 공지사항 페이지 <span>{notice.html, notice_detail.html}</span><br>
+                                        - 발표담당
+                                    </p>
+                                    <div class="link">
+                                        <a href="https://github.com/DOoOoOoOnut/project_yeogi.git" target="_blank"
+                                            class="git">+Github 코드보기</a>
+                                        <a href="https://www.figma.com/proto/fsc1pWbHVKhmVLFIVJRfIf/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C?page-id=0%3A1&type=design&node-id=1-138&viewport=302%2C1678%2C0.14&t=ngDRl3j0Z3R8gqPl-1&scaling=contain&mode=design"
+                                            target="_blank" class="plan">기획서 보기</a>
+                                        <a href="https://yunaweb.pe.kr/yeogi_frontend24/" target="_blank" class="mainpage">결과보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum">
+                            <!-- <a href="http://minah.dothome.co.kr/" target="_blank" class="mainpage"> --><img
+                                    src="./images/yeo.png" alt="여기어때"></div>
+                        </div>
+                        <div class="swiper-slide project">
+                            <div class="page">
+                                <div class="detail">
+                                    <h2>TeamProject {APPDESIGN}</h2>
+                                    <p>오늘 내가 입어야 할 옷은?(오내옷)</p>
+                                    <p>일상에 필요한 앱을 구상하여 디자인</p>
+                                    <p>아이디어 구상 및 발표자료 제작, 발표담당</p>
+                                    <div class="skills">
+                                        <p>#Figma</p>
+                                        <p>#photoshop</p>
+                                        <p>#illustration</p>
+                                        <p>#notion</p>
+                                    </div>
+                                    <div class="link">
+                                        <a href="https://www.figma.com/proto/3aGwgB1xKW1LdDqqkKnfqc/ppt?page-id=0%3A1&type=design&node-id=55-927&viewport=499%2C251%2C0.03&t=keE80gHVOVF37sSH-1&scaling=contain&mode=design"
+                                target="_blank" class="mainpage">앱디자인결과보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum">
+                            <img src="./images/appd.png"
+                                    alt="SleepingBottle"></div>
+                        </div>
+                        <!-- <div class="swiper-slide project_04">
+                            <div class="page">
+                                <div class="detail">
+                                    <h2>TeamProject <span>{작업중}</span></h2>
+                                    <p>2024.04.01 - 04.30</p>
+                                    <p>대한극장</p>
+                                    <p>팀원 3명참여</p>
+                                    <p>- 극장소개 페이지 <span>{theater_intro.html}</span><br>
+                                        - 상영관별 좌석도 페이지 <span>{seat.html}</span><br>
+                                        - 위치 및 교통편 <span>{Location.html}</span><br>
+                                        - 대관안내 페이지 <span>{rentalguide.html}</span><br>
+                                        - 관람요금 페이지 <span>{admissionfee.html}</span><br>
+                                        - 예매하기 페이지<br>
+                                        - 고객센터 페이지 <span>{customerService, inquiry, notice, notice_detail_faq.html}</span><br>
+                                        - 기획서 디자인 
+                                    </p>
+                                    <div class="data">
+                                        <a href="https://github.com/leejonghyunbeen/koreaCinema.git" target="_blank" class="git">+Github</a>
+                                        <a href="https://www.figma.com/proto/NTEAAVCpPrK3ig1XXsa0iq/%EB%8C%80%ED%95%9C%EC%8B%9C%EB%84%A4%EB%A7%88?page-id=0%3A1&type=design&node-id=1-3&viewport=718%2C476%2C0.06&t=mi2je4siWyBr1mwO-1&scaling=contain&mode=design" target="_blank" class="plan">+기획서 {작업중}</a>
+                                    </div>
+                                    <div class="skills">
+                                        <p>#html5</p>
+                                        <p>#css3</p>
+                                        <p>#scss</p>
+                                        <p>#javascript</p>
+                                        <p>#React</p>
+                                        <p>#PHP</p>
+                                        <p>#Chatgpt</p>
+                                        <p>#Figma</p>
+                                        <p>#github</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="https://koreacinema.netlify.app/" target="_blank" class="mainpage"><img src="./images/대한극장.png" alt="SleepingBottle"><span class="bg"><span>CLICK</span></span></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================디자인프로젝트 -->
+        <section class="work" id="designProject">
+            <div class="background">
+                <div class="title">
+                    <h1>Design Project</h1>
+                </div>
+                <div class="workPage">
+                    <h2>SNS Design</h2>
+                    <p>PHOTOSHOP, ILLSTLATION 사용한 디자인 작업물입니다.</p>
+                    <div class="swiper" id="workContainer2">
+                        <div class="swiper-wrapper workBox2">
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work23.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work24.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work25.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work26.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign18">
+                                <p><img src="./images/work18.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign20">
+                                <p><img src="./images/work20.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work22.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work27.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work28.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work29.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work30.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work31.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign22">
+                                <p><img src="./images/work32.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workPage">
+                    <h2>DRAWING, SKETCHUP, 3DMAX</h2>
+                    <p>PHOTOSHOP, ILLSTLATION, DRAWING, SKETCHUP, 3DMAX 사용한 디자인 작업물입니다.</p>
+                    <div class="swiper" id="workContainer1">
+                        <div class="swiper-wrapper workBox1">
+                            <div class="swiper-slide workDesign13">
+                                <p><img src="./images/work13.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign14">
+                                <p><img src="./images/work14.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign15">
+                                <p><img src="./images/work15.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign16">
+                                <p><img src="./images/work16.png" alt=""></p>
+                            </div>
+                            <div class="swiper-slide workDesign17">
+                                <p><img src="./images/work17.png" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="./javascript/javascript.js"></script>
+    <footer>여기까지 제 포트폴리오를 봐주셔서 감사합니다!</footer>
+    <script>
+
+let projectContainer = new Swiper('#projectContainer', {
+    autoplay:{delay:2000,},
+    loop:true,
+})
+
+let swiper01 = new Swiper('#workContainer1', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop : true, autoplay :{delay:3000,},
+})
+
+let swiper02 = new Swiper('#workContainer2', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop : true, autoplay :{delay:3000,},
+})
+
+let swiper03 = new Swiper('#workContainer3', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true, autoplay: { delay: 3000, },
+});
+
+let swiper04 = new Swiper('#workContainer4', {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    loop: true, autoplay: { delay: 3000, },
+});
+
+</script>
 </body>
 </html>
